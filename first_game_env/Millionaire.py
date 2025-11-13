@@ -40,10 +40,13 @@ def event_check():
                 if len(form_layout["int_fields"]["user_input"]) >= 3 and form_layout["int_fields"]["button"].collidepoint(mouse_pos):
                     
                     form_layout["run"] = False
+            
+            for f , tap in enumerate(main_asset["buttons"]["images"]):
                 
-            # if form_layout["int_fields"]["button"].collidepoint(mouse_pos):
-            #     user_data()
-                
+                if tap["rect"].collidepoint(mouse_pos):
+                    
+                    tap["active"] = True
+                    print("pressed")
                 
         if event.type == pygame.KEYDOWN:      
             for f in form_layout["login_fields"]:
@@ -74,6 +77,7 @@ def load_font(wgt: str, size: int):
 def input_validation():
 
     if form_layout["login_fields"][0]["text"] == "Admin" and form_layout["login_fields"][1]["text"] == "12345678":
+        
         form_layout["running"] = True
         form_layout["status"]["user_cred"] = False
  
@@ -115,12 +119,10 @@ def user_interest(form_layout):
 
     pygame.display.update()
     clock.tick(fps)
-        
-    
+       
 def load_image(name, size):
     img = pygame.image.load(asset_path(name)).convert_alpha()
     return pygame.transform.smoothscale(img, size) if size else img
-
 
 def animation():
     
@@ -152,7 +154,6 @@ def animation():
         
         pygame.display.flip()
         clock.tick(fps)
-    
 
 def form_page(surface):
     
@@ -260,8 +261,85 @@ def form_page(surface):
         pygame.display.update()
         clock.tick(fps)
 
+def main_game():
+    #  form_layout["running"]
+    while True:
+        event_check()
+        
+        # Main Title
+        main_Title_Surf = load_font("SemiBold", 50).render(main_asset["title"], True, black_Text)
+        main_Title_Rect = main_Title_Surf.get_rect(midtop=(win_Size[0] // 2, 10))
+        
 
+        # Winning Amount
+        
+        pygame.draw.rect(main_Surf,surf_Bg,main_asset["leaderboard"]["price_box_rect"], border_radius=20)
+        price_title_Surf = load_font("Regular", 32).render(main_asset["leaderboard"]["title"], True, black_Text)
+        price_title_Rect = price_title_Surf.get_rect(midtop=(1100, 120))
+        pygame.draw.line(main_Surf,(125, 125, 125), (950 ,165), (1250, 165), 1)
+
+        for i, amount in enumerate(main_asset["leaderboard"]["price_amount"]):
+
+            price_Text = load_font("Regular", 16).render(f"{16 - i}.  {amount}", True, black_Text)
+            price_Score_Rect = price_Text.get_rect(topleft=(1030, 175 + (i * 30)))
+            main_Surf.blit(price_Text, price_Score_Rect)
+
+        # Timer
+       
+        pygame.draw.circle(main_Surf, surf_Bg, main_asset["timer"]["circle_pos"] , main_asset["timer"]["circle_radius"])
+        timer_Surf = load_font("SemiBold", 40).render("60", True, black_Text)
+        timer_Rect = timer_Surf.get_rect(center= main_asset["timer"]["circle_pos"])
+
+        # Question Field
+        ques_Box = pygame.draw.rect(main_Surf,surf_Bg,main_asset["ques_box"]["box_rect"], border_radius= 100)
+        ques_Surf = load_font("Regular", 20).render(main_asset["ques_box"]["lable"], True, black_Text)
+        ques_text_Rect = ques_Surf.get_rect(center=(ques_Box.center))
+
+        # Options
+
+        for i ,lable in enumerate(main_asset["option"]["fields"]):
+
+            box = pygame.draw.rect(main_Surf, surf_Bg, lable["rect"], border_radius=16)
+            lable = load_font("Medium", 24).render(lable["lable"], True, black_Text)
+            lable_rect = lable.get_rect(midleft=(box.x + 15, box.y + 30))
+            main_Surf.blit(lable, lable_rect)
+
+        # Life-line  
+        ll_rect = pygame.draw.rect(main_Surf,surf_Bg,main_asset["buttons"]["box"], border_radius= 100)
+
+        for i ,name in enumerate(main_asset["buttons"]["images"]):
+ 
+            img = load_image(asset_path(name["image"]), (70 ,70))
+            name["rect"] = img.get_rect(midleft=(125 * (1 + i) , ll_rect.centery))
+
+            main_Surf.blit(img ,  name["rect"])
+
+        main_Surf.blits([(main_Title_Surf, (main_Title_Rect)),(price_title_Surf, price_title_Rect),(timer_Surf,timer_Rect),(ques_Surf,ques_text_Rect)])
+
+        # Main loop
+
+        win.blit(main_bg, (0,0))
+        win.blit(main_Surf, (0,0))
+        
+        if form_layout["run"]:
+            user_interest(form_layout)
+        
+        if game_play["start"]:
+            game_function()
+
+        pygame.display.update()
+        clock.tick(fps)
+
+def game_function():
     
+    while game_play["start"]:
+        
+        
+        
+        
+        pygame.display.flip()
+        clock.tick(fps)
+
 #Setup
 win = pygame.display.set_mode(win_Size)
 pygame.display.set_caption("Millionaire")
@@ -296,7 +374,7 @@ form_layout = {
     ],
     "login_btn" : ["Login",pygame.Rect(0, 0, 0, 0)],
     "invalid" : False,
-    "running" : True,
+    "running" : False,
     "run" : True,
     "int_fields" : {
         "main_rect" : pygame.Rect(0, 0, 600, 540),
@@ -343,74 +421,22 @@ main_asset = {
                 },
     "buttons" : {
         "box" : pygame.Rect(30 , 540 , 900, 120),
-        "images" : ["remove.png","call.png","swap.png","election.png","fifty.png", "start-button.png"]
+        "images" : [
+            {"image": "remove.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)},
+            {"image": "call.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)},
+            {"image": "swap.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)},
+            {"image": "election.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)},
+            {"image": "fifty.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)},
+            {"image": "start-button.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)}
+            ]
     }
             }
 
+game_play = {
+    "start" : False,
+    "btn_start" : ["right-arrorw.png" ,pygame.Rect(750, 565, 70, 70)]
+}
 
-def main_game():
-     
-    while form_layout["running"]:
-        event_check()
-        
-        # Main Title
-        main_Title_Surf = load_font("SemiBold", 50).render(main_asset["title"], True, black_Text)
-        main_Title_Rect = main_Title_Surf.get_rect(midtop=(win_Size[0] // 2, 10))
-        
-
-        # Winning Amount
-        
-        pygame.draw.rect(main_Surf,surf_Bg,main_asset["leaderboard"]["price_box_rect"], border_radius=20)
-        price_title_Surf = load_font("Regular", 32).render(main_asset["leaderboard"]["title"], True, black_Text)
-        price_title_Rect = price_title_Surf.get_rect(midtop=(1100, 120))
-        pygame.draw.line(main_Surf,(125, 125, 125), (950 ,165), (1250, 165), 1)
-
-        for i, amount in enumerate(main_asset["leaderboard"]["price_amount"]):
-
-            price_Text = load_font("Regular", 16).render(f"{16 - i}.  {amount}", True, black_Text)
-            price_Score_Rect = price_Text.get_rect(topleft=(1030, 175 + (i * 30)))
-            main_Surf.blit(price_Text, price_Score_Rect)
-
-        # Timer
-       
-        pygame.draw.circle(main_Surf, surf_Bg, main_asset["timer"]["circle_pos"] , main_asset["timer"]["circle_radius"])
-        timer_Surf = load_font("SemiBold", 40).render("60", True, black_Text)
-        timer_Rect = timer_Surf.get_rect(center= main_asset["timer"]["circle_pos"])
-
-        # Question Field
-        ques_Box = pygame.draw.rect(main_Surf,surf_Bg,main_asset["ques_box"]["box_rect"], border_radius= 100)
-        ques_Surf = load_font("Regular", 20).render(main_asset["ques_box"]["lable"], True, black_Text)
-        ques_text_Rect = ques_Surf.get_rect(center=(ques_Box.center))
-
-        # Options
-
-        for i ,lable in enumerate(main_asset["option"]["fields"]):
-
-            box = pygame.draw.rect(main_Surf, surf_Bg, lable["rect"], border_radius=16)
-            lable = load_font("Medium", 24).render(lable["lable"], True, black_Text)
-            lable_rect = lable.get_rect(midleft=(box.x + 15, box.y + 30))
-            main_Surf.blit(lable, lable_rect)
-
-        # Life-line  
-        ll_rect = pygame.draw.rect(main_Surf,surf_Bg,main_asset["buttons"]["box"], border_radius= 100)
-
-        for i ,name in enumerate(main_asset["buttons"]["images"]):
-            img = load_image(asset_path(name), (70 ,70))
-            img_Rect = img.get_rect(midleft=(125 * (1 + i) , ll_rect.centery))
-            main_Surf.blit(img , img_Rect)
-
-        main_Surf.blits([(main_Title_Surf, (main_Title_Rect)),(price_title_Surf, price_title_Rect),(timer_Surf,timer_Rect),(ques_Surf,ques_text_Rect)])
-
-        # Main loop
-
-        win.blit(main_bg, (0,0))
-        win.blit(main_Surf, (0,0))
-        
-        if form_layout["run"]:
-            user_interest(form_layout)
-        pygame.display.update()
-        clock.tick(fps)
-
-animation()
-form_page(win)
+# animation()
+# form_page(win)
 main_game()

@@ -1,0 +1,319 @@
+Technology & Programming
+
+Which language is primarily used for web development?
+A) Python
+B) JavaScript ✅
+C) C++
+D) Java
+
+What does CPU stand for?
+A) Central Processing Unit ✅
+B) Computer Personal Unit
+C) Central Program Unit
+D) Control Processing Unit
+
+Which of these is a Python web framework?
+A) Django ✅
+B) React
+C) Angular
+D) Spring
+
+Git is mainly used for:
+A) Editing code
+B) Version control ✅
+C) Compiling programs
+D) Debugging
+
+Which of these is NOT a programming language?
+A) Java
+B) HTML ✅
+C) C#
+D) Ruby
+
+Gaming & Game Development
+
+Which game engine is made by Epic Games?
+A) Unity
+B) Unreal Engine ✅
+C) CryEngine
+D) Godot
+
+What is FPS in gaming?
+A) Fast Player Shooter
+B) Frames Per Second ✅
+C) First Person Strategy
+D) Free Player System
+
+In game design, NPC stands for:
+A) Non-Playable Character ✅
+B) New Player Character
+C) Non-Programming Code
+D) Next Phase Controller
+
+Which platform is known for mobile game development?
+A) Unity ✅
+B) Unreal Engine
+C) Blender
+D) Maya
+
+What is loot in games?
+A) Currency
+B) Collectible items ✅
+C) Health points
+D) Player ranking
+
+Art & Design 
+
+RGB is used in:
+A) Printing
+B) Web design and digital displays ✅
+C) Sculpting
+D) Painting
+
+Which software is best known for vector graphics?
+A) Photoshop
+B) Illustrator ✅
+C) Lightroom
+D) InDesign
+
+Typography is the art of:
+A) Drawing images
+B) Designing fonts and text ✅
+C) Photography
+D) Color correction
+
+In color theory, complementary colors are:
+A) Colors next to each other
+B) Colors opposite on the color wheel ✅
+C) Shades of the same color
+D) Neutral colors
+
+Which tool is primarily used for digital painting?
+A) Blender
+B) Photoshop ✅
+C) AutoCAD
+D) Unity
+
+Music & Audio Production 
+
+DAW stands for:
+A) Digital Audio Workstation ✅
+B) Direct Audio Work
+C) Digital Audio Wave
+D) Dynamic Audio Work
+
+MIDI files contain:
+A) Audio recordings
+B) Musical instructions ✅
+C) Compressed sound
+D) Video files
+
+Which is a popular music production software?
+A) Ableton Live ✅
+B) Audacity
+C) VLC
+D) Notepad
+
+EQ in audio refers to:
+A) Equalizer ✅
+B) Equipment
+C) Echo quality
+D) Electronic quantization
+
+Which instrument is used in orchestral music?
+A) Synthesizer
+B) Violin ✅
+C) Electric guitar
+D) DJ controller
+
+Travel & Adventure 
+
+The Taj Mahal is located in:
+A) Delhi
+B) Agra ✅
+C) Jaipur
+D) Mumbai
+
+Which country is known as the “Land of the Rising Sun”?
+A) China
+B) Japan ✅
+C) Thailand
+D) South Korea
+
+Mount Everest is located in:
+A) India
+B) Nepal ✅
+C) Bhutan
+D) Tibet
+
+Which city is famous for canals and gondolas?
+A) Venice ✅
+B) Amsterdam
+C) Bruges
+D) Copenhagen
+
+Safari is most commonly associated with which continent?
+A) Asia
+B) Africa ✅
+C) Europe
+D) South America
+
+Fitness & Health 
+
+BMI stands for:
+A) Body Mass Index ✅
+B) Body Measurement Indicator
+C) Body Muscle Index
+D) Basic Metabolism Indicator
+
+Cardio exercises mainly improve:
+A) Strength
+B) Stamina and heart health ✅
+C) Flexibility
+D) Bone density
+
+Which vitamin is produced when sunlight hits the skin?
+A) Vitamin A
+B) Vitamin B
+C) Vitamin C
+D) Vitamin D ✅
+
+Push-ups primarily work on:
+A) Legs
+B) Arms and chest ✅
+C) Back
+D) Neck
+
+Which nutrient is the primary source of energy?
+A) Protein
+B) Carbohydrates ✅
+C) Vitamins
+D) Minerals
+
+Books & Authors 
+
+Who wrote “Harry Potter”?
+A) J.R.R. Tolkien
+B) J.K. Rowling ✅
+C) George R.R. Martin
+D) Suzanne Collins
+
+“Pride and Prejudice” was written by:
+A) Emily Brontë
+B) Jane Austen ✅
+C) Mary Shelley
+D) Charles Dickens
+
+Which book is considered an epic poem?
+A) The Iliad ✅
+B) The Great Gatsby
+C) Hamlet
+D) Moby Dick
+
+Who wrote “1984”?
+A) Aldous Huxley
+B) George Orwell ✅
+C) Ray Bradbury
+D) H.G. Wells
+
+Who is the author of “The Lord of the Rings”?
+A) J.K. Rowling
+B) J.R.R. Tolkien ✅
+C) C.S. Lewis
+D) Rick Riordan
+
+Movies & Series 
+
+Who directed “Titanic”?
+A) James Cameron ✅
+B) Steven Spielberg
+C) Christopher Nolan
+D) Peter Jackson
+
+Which series is about a chemistry teacher turning into a drug lord?
+A) Narcos
+B) Breaking Bad ✅
+C) Money Heist
+D) The Wire
+
+Who played Iron Man in the Marvel movies?
+A) Chris Evans
+B) Robert Downey Jr. ✅
+C) Chris Hemsworth
+D) Mark Ruffalo
+
+The movie “Inception” was directed by:
+A) Martin Scorsese
+B) Christopher Nolan ✅
+C) Quentin Tarantino
+D) Steven Spielberg
+
+Which film won Best Picture at the Oscars 2020?
+A) 1917
+B) Parasite ✅
+C) Joker
+D) Ford v Ferrari
+
+Cooking & Food Exploration 
+
+Sushi originates from which country?
+A) China
+B) Japan ✅
+C) Korea
+D) Thailand
+
+Which spice is yellow and used in curries?
+A) Cumin
+B) Turmeric ✅
+C) Paprika
+D) Saffron
+
+Which cheese is traditionally used in pizza?
+A) Cheddar
+B) Mozzarella ✅
+C) Brie
+D) Gouda
+
+Which fruit is known as the “king of fruits”?
+A) Mango ✅
+B) Banana
+C) Apple
+D) Pineapple
+
+Which cooking method uses steam to cook food?
+A) Frying
+B) Boiling
+C) Steaming ✅
+D) Roasting
+
+Business & Entrepreneurship 
+
+IPO stands for:
+A) Initial Public Offering ✅
+B) International Private Organization
+C) Investment Portfolio Option
+D) Industry Product Output
+
+Who is the founder of Microsoft?
+A) Steve Jobs
+B) Bill Gates ✅
+C) Elon Musk
+D) Mark Zuckerberg
+
+A startup is generally:
+A) A large company
+B) A newly established business ✅
+C) A non-profit organization
+D) A government enterprise
+
+Which term refers to owning part of a company?
+A) Loan
+B) Share/Stock ✅
+C) Dividend
+D) Mortgage
+
+Which is an e-commerce giant?
+A) Walmart
+B) Amazon ✅
+C) IKEA
+D) Costco
