@@ -1,4 +1,4 @@
-import pygame, os, sys, requests, random
+import pygame, os, sys
         
 pygame.init()       # Margin all sides 30px
 
@@ -41,12 +41,15 @@ def event_check():
                     
                     form_layout["run"] = False
             
-            for f , tap in enumerate(main_asset["buttons"]["images"]):
+            if game_play["btn_start"][1].collidepoint(mouse_pos):
+                main_asset["buttons"]["status"] = True
+
+            # for f , tap in enumerate(main_asset["buttons"]["images"]):
                 
-                if tap["rect"].collidepoint(mouse_pos):
+            #     if tap["rect"].collidepoint(mouse_pos):
                     
-                    tap["active"] = True
-                    print("pressed")
+            #         tap["active"] = True
+
                 
         if event.type == pygame.KEYDOWN:      
             for f in form_layout["login_fields"]:
@@ -60,7 +63,7 @@ def event_check():
                            
 def asset_path(*path_parts):
     """Return absolute path for any asset (font, image, etc.)"""
-    return os.path.join(BASE_DIR, *path_parts)
+    return os.path.join(BASE_DIR, "asset", *path_parts)
 
 def load_font(wgt: str, size: int):
     valid_weight = ["Thin","Light","ExtraLight","Regular","Medium","SemiBold","Bold","ExtraBold","Black"]
@@ -72,7 +75,7 @@ def load_font(wgt: str, size: int):
         return pygame.font.Font(full_path, size)
     except pygame.error:
         print(f"Error loading {wgt}. Trying Regular...")
-        return pygame.font.Font(asset_path('Poppins/Poppins-Regular.ttf'), size)
+        return pygame.font.Font(asset_path('asset/Poppins/Poppins-Regular.ttf'), size)
     
 def input_validation():
 
@@ -274,7 +277,7 @@ def main_game():
         # Winning Amount
         
         pygame.draw.rect(main_Surf,surf_Bg,main_asset["leaderboard"]["price_box_rect"], border_radius=20)
-        price_title_Surf = load_font("Regular", 32).render(main_asset["leaderboard"]["title"], True, black_Text)
+        price_title_Surf = load_font("Regular", 28).render(main_asset["leaderboard"]["title"], True, black_Text)
         price_title_Rect = price_title_Surf.get_rect(midtop=(1100, 120))
         pygame.draw.line(main_Surf,(125, 125, 125), (950 ,165), (1250, 165), 1)
 
@@ -305,15 +308,24 @@ def main_game():
             main_Surf.blit(lable, lable_rect)
 
         # Life-line  
+        
+        
         ll_rect = pygame.draw.rect(main_Surf,surf_Bg,main_asset["buttons"]["box"], border_radius= 100)
+        
+        if main_asset["buttons"]["status"]:
+            for i ,name in enumerate(main_asset["buttons"]["images"]):
+    
+                img = load_image(asset_path(name["image"]), (70 ,70))
+                name["rect"] = img.get_rect(midleft=(128 * (1 + i) , ll_rect.centery))
 
-        for i ,name in enumerate(main_asset["buttons"]["images"]):
- 
-            img = load_image(asset_path(name["image"]), (70 ,70))
-            name["rect"] = img.get_rect(midleft=(125 * (1 + i) , ll_rect.centery))
-
-            main_Surf.blit(img ,  name["rect"])
-
+                main_Surf.blit(img ,  name["rect"])
+        else:
+            start_img = load_image(game_play["btn_start"][0],(70, 70))
+            game_play["btn_start"][1] = start_img.get_rect(center=(ll_rect.center))
+            
+            main_Surf.blit(start_img, game_play["btn_start"][1])
+            
+            
         main_Surf.blits([(main_Title_Surf, (main_Title_Rect)),(price_title_Surf, price_title_Rect),(timer_Surf,timer_Rect),(ques_Surf,ques_text_Rect)])
 
         # Main loop
@@ -324,15 +336,15 @@ def main_game():
         if form_layout["run"]:
             user_interest(form_layout)
         
-        if game_play["start"]:
-            game_function()
+        # if game_play["start"]:
+        #     game_function()
 
         pygame.display.update()
         clock.tick(fps)
 
-def game_function():
+# def game_function():
     
-    while game_play["start"]:
+#     while game_play["start"]:
         
         
         
@@ -401,7 +413,7 @@ form_layout = {
 main_asset = {
     "title" : "Millionaire",
     "leaderboard" :{
-        "title" : "Leaderboard",
+        "title" : "Prize Amount",
         "price_amount" : ["7,00,00,000", "1,00,00,000", "50,00,000", "25,00,000", "12,50,000", "6,40,000", "3,20,000", "1,60,000", "80,000", "40,000", "20,000", "10,000", "5000", "3000", "2000", "1000"],
         "price_box_rect" : pygame.Rect(950, 115, 300, 545)},
     "timer" : {
@@ -420,6 +432,7 @@ main_asset = {
                     {"lable" :"D:", "rect" : pygame.Rect(495, 450, 425, 60), "active" : False}] 
                 },
     "buttons" : {
+        "status" : False,
         "box" : pygame.Rect(30 , 540 , 900, 120),
         "images" : [
             {"image": "remove.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)},
@@ -427,14 +440,14 @@ main_asset = {
             {"image": "swap.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)},
             {"image": "election.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)},
             {"image": "fifty.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)},
-            {"image": "start-button.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)}
+            {"image": "right-arrow.png", "active" : False , "rect" : pygame.Rect(0, 0, 70, 70)}
             ]
     }
             }
 
 game_play = {
-    "start" : False,
-    "btn_start" : ["right-arrorw.png" ,pygame.Rect(750, 565, 70, 70)]
+    "start" : True,
+    "btn_start" : ["start-button.png" ,pygame.Rect(0, 0, 70, 70)]
 }
 
 # animation()
