@@ -450,6 +450,6 @@ game_play = {
     "btn_start" : ["start-button.png" ,pygame.Rect(0, 0, 70, 70)]
 }
 
-# animation()
-# form_page(win)
+animation()
+form_page(win)
 main_game()
