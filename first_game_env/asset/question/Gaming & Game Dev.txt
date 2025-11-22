@@ -1,0 +1,349 @@
+1. What does FPS stand for in gaming?
+
+A) Frames Per Second correct
+B) Fast Play System
+C) First Player Setting
+D) Frame Play Speed
+
+2. Unity uses which primary programming language?
+
+A) Java
+B) Python
+C) C# correct
+D) C++
+
+3. Unreal Engine primarily uses which language?
+
+A) C
+B) C++ correct
+C) JavaScript
+D) Ruby
+
+4. Which company developed Unreal Engine?
+
+A) EA
+B) Epic Games correct
+C) Ubisoft
+D) Sony
+
+5. GPU stands for?
+
+A) General Processing Unit
+B) Graphics Processing Unit correct
+C) Graphical Power Utility
+D) Game Performance Unit
+
+6. Which is NOT a game engine?
+
+A) Godot
+B) Unity
+C) Blender correct
+D) CryEngine
+
+7. Which tool is commonly used for 3D modeling?
+
+A) Excel
+B) Blender correct
+C) Notepad
+D) Audacity
+
+8. "NPC" stands for?
+
+A) Non-Playable Character correct
+B) No Player Control
+C) New Player Character
+D) Non-Programmer Code
+
+9. Which game engine is open-source?
+
+A) Godot correct
+B) Unity
+C) Unreal
+D) CryEngine
+
+10. What is “hitbox” in games?
+
+A) Music file
+B) Collision detection area correct
+C) Health bar
+D) Inventory menu
+
+11. "AI" in games is used for?
+
+A) Graphics
+B) Enemy behavior correct
+C) Sound
+D) Networking
+
+12. The process of reducing game file size is called?
+
+A) Rendering
+B) Optimization correct
+C) Debugging
+D) Modeling
+
+13. Which platform is used for PC game distribution?
+
+A) Steam correct
+B) Netflix
+C) VLC
+D) Office
+
+14. What is V-Sync?
+
+A) Syncs game with sound
+B) Syncs frame rate with monitor refresh rate correct
+C) Syncs keyboard
+D) Syncs internet speed
+
+15. Which is a type of game genre?
+
+A) RPG correct
+B) HTML
+C) SQL
+D) CSS
+
+16. “LOD” stands for?
+
+A) Level of Detail correct
+B) Line of Debug
+C) Load on Demand
+D) Level of Direction
+
+17. What does “lag” mean in gaming?
+
+A) High speed
+B) Fast loading
+C) Slow response/delay correct
+D) Good connection
+
+18. The main loop in a game handles?
+
+A) Audio only
+B) Physics
+C) Rendering & Updates correct
+D) Emails
+
+19. Which device is used for VR gaming?
+
+A) Wii Remote
+B) Oculus/Meta Quest correct
+C) Controller
+D) Projector
+
+20. "AAA games" refers to?
+
+A) Very small games
+B) High-budget studio games correct
+C) Puzzle games
+D) Mobile games
+
+21. Physics engines simulate?
+
+A) Music
+B) Motion & collisions correct
+C) AI
+D) UI
+
+22. Which is NOT a PC gaming store?
+
+A) Steam
+B) Epic Games Store
+C) Google Play correct
+D) GOG
+
+23. GDD stands for?
+
+A) Game Design Document correct
+B) Graphic Design Data
+C) Game Debug Directory
+D) Game Development Demo
+
+24. Which console is made by Sony?
+
+A) Xbox
+B) PlayStation correct
+C) Nintendo Switch
+D) Sega Dreamcast
+
+25. “Pixel Art” is common in?
+
+A) AAA 3D games
+B) Retro/2D games correct
+C) Racing sims
+D) VR
+
+26. What is “rendering”?
+
+A) Storing data
+B) Generating final graphics correct
+C) Writing code
+D) Editing sound
+
+27. What is “alpha testing”?
+
+A) Public test
+B) Internal testing correct
+C) Final test
+D) Console test
+
+28. Indie games are developed by?
+
+A) Large companies
+B) Solo or small teams correct
+C) Government
+D) Only students
+
+29. Which tool is used for sound editing in games?
+
+A) Audacity correct
+B) MySQL
+C) Chrome
+D) Unity
+
+30. A “sprite” in 2D games is?
+
+A) Background
+B) 2D image/character correct
+C) Sound
+D) Dialogue
+
+31. FPS (shooter) games stand for?
+
+A) First-Person Shooter correct
+B) Fast Player Shooter
+C) Fun Player Strategy
+D) Free Play System
+
+32. Which is a mobile game engine?
+
+A) Construct 3 correct
+B) Photoshop
+C) MySQL
+D) VMware
+
+33. “Open world” games allow?
+
+A) Linear paths
+B) Free exploration correct
+C) Only one mission
+D) Only online
+
+34. VR stands for?
+
+A) Virtual Reality correct
+B) Visual Response
+C) Video Render
+D) Virtual Recorder
+
+35. A “boss fight” is?
+
+A) A mini-game
+B) Fight with a powerful enemy correct
+C) Cutscene
+D) Training mode
+
+36. Game textures define?
+
+A) AI
+B) Surface detail correct
+C) Story
+D) Sound
+
+37. What is game “debugging”?
+
+A) Adding music
+B) Fixing errors correct
+C) Adding levels
+D) Uploading game
+
+38. A “mod” is?
+
+A) Game cheat
+B) User-created modification correct
+C) System file
+D) Default feature
+
+39. Which engine is best known for realistic graphics?
+
+A) Unity
+B) Unreal Engine correct
+C) Godot
+D) RPG Maker
+
+40. Which is NOT a gaming platform?
+
+A) PlayStation
+B) Xbox
+C) Linux
+D) Microsoft Word correct
+
+41. A “cutscene” is?
+
+A) Dialogue box
+B) Non-interactive cinematic scene correct
+C) UI menu
+D) Level map
+
+42. Game latency is measured in?
+
+A) FPS
+B) Mbps
+C) ms (milliseconds) correct
+D) GB
+
+43. “Save state” is commonly used in?
+
+A) Emulators correct
+B) PlayStation 5
+C) Windows
+D) Xbox
+
+44. What is “ray tracing”?
+
+A) Audio mixing
+B) Advanced lighting technique correct
+C) Movement control
+D) Shadow removal
+
+45. The main character in a game is called?
+
+A) NPC
+B) Protagonist correct
+C) Opponent
+D) Enemy AI
+
+46. What is “cooldown”?
+
+A) Game temperature
+B) Time before ability can be used again correct
+C) Saving files
+D) Level restart
+
+47. Xbox is owned by?
+
+A) Sony
+B) Microsoft correct
+C) Valve
+D) Google
+
+48. “Frames drop” happens due to?
+
+A) High GPU power
+B) Low performance correct
+C) Strong internet
+D) Clean RAM
+
+49. Which game engine supports visual scripting (Blueprints)?
+
+A) Unity
+B) Unreal Engine correct
+C) Godot
+D) SDL
+
+50. What is a “beta version”?
+
+A) First prototype
+B) Almost-final test version correct
+C) Final full release
+D) Only mobile version

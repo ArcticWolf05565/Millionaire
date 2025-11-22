@@ -1,4 +1,4 @@
-import pygame, os, sys
+import pygame, os, sys, random
         
 pygame.init()       # Margin all sides 30px
 
@@ -43,12 +43,14 @@ def event_check():
             
             if game_play["btn_start"][1].collidepoint(mouse_pos):
                 main_asset["buttons"]["status"] = True
+                game_play["start"] = True
+           
+            last_dict = main_asset["buttons"]["images"][-1]
+            last_key = list(last_dict.keys())[-1] 
+            last_value = last_dict[last_key]
 
-            # for f , tap in enumerate(main_asset["buttons"]["images"]):
-                
-            #     if tap["rect"].collidepoint(mouse_pos):
-                    
-            #         tap["active"] = True
+            if last_value.collidepoint(mouse_pos):
+                game_play["start_timer"] = True
 
                 
         if event.type == pygame.KEYDOWN:      
@@ -303,7 +305,7 @@ def main_game():
         for i ,lable in enumerate(main_asset["option"]["fields"]):
 
             box = pygame.draw.rect(main_Surf, surf_Bg, lable["rect"], border_radius=16)
-            lable = load_font("Medium", 24).render(lable["lable"], True, black_Text)
+            lable = load_font("Medium", 18).render(lable["lable"], True, black_Text)
             lable_rect = lable.get_rect(midleft=(box.x + 15, box.y + 30))
             main_Surf.blit(lable, lable_rect)
 
@@ -336,21 +338,86 @@ def main_game():
         if form_layout["run"]:
             user_interest(form_layout)
         
-        # if game_play["start"]:
-        #     game_function()
+        if game_play["start"]:
+           
+            game_play["ques_ans"] = game_loop()
+            
+            main_asset["ques_box"]["lable"] = game_play["ques_ans"][0]
+            
+            game_play["start"] = False
 
+        
+        if game_play["start_timer"]:
+
+            for i ,lable in enumerate(main_asset["option"]["fields"]):
+    
+                lable["lable"]= lable["lable"] + "  " + game_play["ques_ans"][1 + i]
+            
+            game_play["ques_ans"] = []
+            game_play["start_timer"] = False
+                
+        
         pygame.display.update()
         clock.tick(fps)
-
-# def game_function():
+        
+def game_loop():
     
-#     while game_play["start"]:
+    while True: 
+           
+        random.shuffle(form_layout["int_fields"]["user_input"])
         
+        file_path = asset_path(f"question/{form_layout["int_fields"]["user_input"][0]}")
         
+        file_path = file_path + ".txt"
         
+        with open(file_path,"r") as f :
+            data = f.readlines()
+
+        # random.shuffle(data)
+        blocks = extract_block(data)
+            
+        asked_file = asset_path("question/asked_question.txt")
+        random.shuffle(blocks)
+
+        with open(asked_file, "r") as f:
+            asked = f.read()     
+            
+        for block in blocks:
+            b = str(block)
+            if b not in asked:
+                with open(asked_file, "a") as f:
+                    f.write(b + "\n") 
+                    
+                    # print("New question stored.", block)
+                    
+                    return block
+
+def extract_block(data):
+    
+    block = []
+    current = []
+    
+    for line in data:
+            
+        line = line.strip()
+        if not line:
+            continue
         
-        pygame.display.flip()
-        clock.tick(fps)
+        if line.endswith("?"):
+            # if current:
+            #     block.append(current)
+            current = [line[3:].strip()]
+
+        if line.startswith(("A)", "B)", "C)", "D)")):
+            options = line[2:].replace("correct", "").strip()
+            if current:
+                current.append(options)
+            
+        if len(current) == 5:
+            block.append(current)
+            current = []
+            
+    return block      
 
 #Setup
 win = pygame.display.set_mode(win_Size)
@@ -391,7 +458,7 @@ form_layout = {
     "int_fields" : {
         "main_rect" : pygame.Rect(0, 0, 600, 540),
         "title" : "Choose Atleast 3 interest",
-        "user_input" :  ["book & author"],
+        "user_input" :  [],
         "button" : pygame.Rect(0, 0, 540, 55), 
         "fields" : [
             {"lable" : "Technology & Programming", "active" : False, "rect" : pygame.Rect(370, 155,255, 52)},
@@ -446,10 +513,12 @@ main_asset = {
             }
 
 game_play = {
-    "start" : True,
-    "btn_start" : ["start-button.png" ,pygame.Rect(0, 0, 70, 70)]
+    "start" : False,
+    "btn_start" : ["start-button.png" ,pygame.Rect(0, 0, 70, 70)],
+    "ques_ans" : [],
+    "start_timer" : False
 }
 
-animation()
-form_page(win)
+# animation()
+# form_page(win)
 main_game()

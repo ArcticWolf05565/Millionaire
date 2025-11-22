@@ -1,0 +1,349 @@
+1. Which language is primarily used for web development?
+
+A) Python
+B) JavaScript correct
+C) C
+D) SQL
+
+2. What does CPU stand for?
+
+A) Central Processing Unit correct
+B) Computer Processing Utility
+C) Central Power Unit
+D) Core Programming Unit
+
+3. Which is NOT an operating system?
+
+A) Linux
+B) Windows
+C) Android
+D) Photoshop correct
+
+4. What does HTML stand for?
+
+A) Hyper Trainer Marking Language
+B) Hyper Text Makeup Language
+C) Hyper Text Markup Language correct
+D) High Text Markup Level
+
+5. Which database language is used to query data?
+
+A) SQL correct
+B) HTML
+C) CSS
+D) PHP
+
+6. Python was created by?
+
+A) Dennis Ritchie
+B) Guido van Rossum correct
+C) James Gosling
+D) Bjarne Stroustrup
+
+7. In programming, a loop that never ends is called?
+
+A) Dead Loop
+B) Infinite Loop correct
+C) Over Loop
+D) Static Loop
+
+8. What does RAM stand for?
+
+A) Random Access Memory correct
+B) Read Access Memory
+C) Rapid Active Memory
+D) Run Access Memory
+
+9. Which of these is a version control system?
+
+A) Git correct
+B) Chrome
+C) Excel
+D) Wi-Fi
+
+10. Which company developed Java?
+
+A) Microsoft
+B) Google
+C) Sun Microsystems correct
+D) Apple
+
+11. CSS is used for?
+
+A) Programming
+B) Designing webpages correct
+C) Database
+D) Testing
+
+12. Binary system uses base?
+
+A) 4
+B) 8
+C) 2 correct
+D) 16
+
+13. Which one is an example of cloud storage?
+
+A) Google Drive correct
+B) Notepad
+C) VLC
+D) Paint
+
+14. Linux is an example of?
+
+A) Application
+B) Operating System correct
+C) Browser
+D) Game Engine
+
+15. Which tag is used for inserting an image in HTML?
+
+A) <img> correct
+B) <image>
+C) <pic>
+D) <src>
+
+16. JavaScript runs in?
+
+A) Browser correct
+B) Photoshop
+C) Excel
+D) BIOS
+
+17. Who founded Microsoft?
+
+A) Steve Jobs
+B) Bill Gates correct
+C) Mark Zuckerberg
+D) Linus Torvalds
+
+18. Which protocol is used for secure browsing?
+
+A) HTTP
+B) HTTPS correct
+C) FTP
+D) SMTP
+
+19. What is the extension for Python files?
+
+A) .java
+B) .py correct
+C) .c
+D) .exe
+
+20. C++ was developed by?
+
+A) Bjarne Stroustrup correct
+B) James Gosling
+C) Guido Rossum
+D) Mark Zuckerberg
+
+21. SQL stands for?
+
+A) Simple Query Language
+B) Structured Query Language correct
+C) Standard Question Language
+D) System Query Language
+
+22. Which is a NoSQL database?
+
+A) MongoDB correct
+B) MySQL
+C) Oracle
+D) SQL Server
+
+23. Ctrl + C is used for?
+
+A) Paste
+B) Copy correct
+C) Cut
+D) Undo
+
+24. Which device stores permanent data?
+
+A) RAM
+B) ROM correct
+C) Cache
+D) Register
+
+25. Which of these is used for styling in web development?
+
+A) CSS correct
+B) PHP
+C) SQL
+D) JSON
+
+26. Which language is used for Android app development?
+
+A) Swift
+B) Java correct
+C) C#
+D) Kotlin (also used)
+
+27. USB stands for?
+
+A) Universal Serial Bus correct
+B) United System Board
+C) Universal System Backup
+D) None
+
+28. Which programming language is famous for AI?
+
+A) Python correct
+B) C
+C) HTML
+D) Bash
+
+29. A compiler converts?
+
+A) Machine to Code
+B) Code to Machine Code correct
+C) Binary to ASCII
+D) Numbers to Text
+
+30. GitHub is used for?
+
+A) Gaming
+B) Code Hosting correct
+C) Watching videos
+D) Scanning QR
+
+31. Which is a frontend framework?
+
+A) React correct
+B) Django
+C) Laravel
+D) Spring
+
+32. JSON stands for?
+
+A) JavaScript Output Node
+B) JavaScript Object Notation correct
+C) Java Source Object
+D) Join Simple Object Notation
+
+33. Python list is represented by?
+
+A) {}
+B) [] correct
+C) ()
+D) <>
+
+34. Machine learning is a part of?
+
+A) AI correct
+B) SQL
+C) Networking
+D) Graphics
+
+35. Which company owns Android?
+
+A) Apple
+B) Samsung
+C) Google correct
+D) Nokia
+
+36. Firewall is used for?
+
+A) Hardware damage
+B) Security correct
+C) Cooling
+D) Cleaning
+
+37. GUI stands for?
+
+A) General User Interface
+B) Graphic User Interface
+C) Graphical User Interface correct
+D) Global User Internet
+
+38. Which is not a programming language?
+
+A) Ruby
+B) Swift
+C) CSS correct
+D) Kotlin
+
+39. Which one is a search engine?
+
+A) Chrome
+B) Safari
+C) Google correct
+D) Ubuntu
+
+40. What stores data in key–value pairs?
+
+A) Python Dictionary correct
+B) Tuple
+C) List
+D) Array
+
+41. Which command shows Git status?
+
+A) git show
+B) git commit
+C) git status correct
+D) git push
+
+42. Which port is used for HTTP?
+
+A) 22
+B) 80 correct
+C) 90
+D) 443
+
+43. In Python, # indicates?
+
+A) Loop
+B) Comment correct
+C) Function
+D) Operator
+
+44. Which language is fastest in execution?
+
+A) C correct
+B) Python
+C) PHP
+D) HTML
+
+45. Which device is used for input?
+
+A) Monitor
+B) Keyboard correct
+C) Speaker
+D) Projector
+
+46. IP address identifies?
+
+A) A computer on network correct
+B) A mobile brand
+C) A website theme
+D) A file
+
+47. A byte contains?
+
+A) 4 bit
+B) 8 bits correct
+C) 16 bits
+D) 32 bits
+
+48. URL stands for?
+
+A) Uniform Resource Locator correct
+B) Universal Record Link
+C) User Request Line
+D) Universal Routing Log
+
+49. JavaScript is?
+
+A) Compiled
+B) Interpreted correct
+C) Machine Code
+D) Assembly
+
+50. What is Git "push"?
+
+A) Upload code to remote repo correct
+B) Download code
+C) Delete repo
+D) Close project

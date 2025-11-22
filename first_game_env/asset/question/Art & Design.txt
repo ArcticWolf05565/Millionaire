@@ -1,0 +1,349 @@
+1. What is the primary color?
+
+A) Green
+B) Red correct
+C) Black
+D) Brown
+
+2. Which software is commonly used for photo editing?
+
+A) Word
+B) Photoshop correct
+C) Excel
+D) Chrome
+
+3. "Typography" refers to?
+
+A) Interior design
+B) The style and appearance of text correct
+C) Drawing animals
+D) Carving wood
+
+4. What are the three primary colors?
+
+A) Red, Yellow, Blue correct
+B) Red, Green, Black
+C) Blue, Green, White
+D) Pink, Brown, Yellow
+
+5. A 2D digital drawing tablet brand is?
+
+A) Wacom correct
+B) Canon
+C) Sony
+D) Epson
+
+6. Which file format supports transparency?
+
+A) JPG
+B) PNG correct
+C) PDF
+D) TXT
+
+7. Who painted the Mona Lisa?
+
+A) Picasso
+B) Leonardo da Vinci correct
+C) Michelangelo
+D) Van Gogh
+
+8. In design, “contrast” means?
+
+A) Repeating colors
+B) Difference between elements correct
+C) Blurring details
+D) Making things smaller
+
+9. Vector graphics are created using?
+
+A) Pixels
+B) Mathematical paths correct
+C) Paint
+D) Clay
+
+10. Which software is famous for vector design?
+
+A) Premiere Pro
+B) Illustrator correct
+C) Audacity
+D) WordPad
+
+11. What is a “palette”?
+
+A) Brush type
+B) Board holding colors correct
+C) Eraser
+D) Printer
+
+12. Which is NOT a design principle?
+
+A) Balance
+B) Unity
+C) Movement
+D) Electricity correct
+
+13. 3D modeling is commonly done in?
+
+A) Blender correct
+B) Notepad
+C) VLC
+D) File Explorer
+
+14. DPI stands for?
+
+A) Dots Per Inch correct
+B) Digital Photo Index
+C) Drawing Point Interface
+D) Depth Pixel Indicator
+
+15. “Hue” refers to?
+
+A) Texture
+B) Brightness
+C) Pure color correct
+D) File size
+
+16. The Golden Ratio is often written as?
+
+A) 1:4
+B) 1:1
+C) 1:1.618 correct
+D) 2:1
+
+17. What is a logo?
+
+A) A story
+B) A brand symbol correct
+C) A map
+D) A filter
+
+18. Which tool is used to draw freehand?
+
+A) Lasso Tool
+B) Brush Tool correct
+C) Rectangle Tool
+D) Text Tool
+
+19. RGB stands for?
+
+A) Red Green Blue correct
+B) Red Gray Black
+C) Right Graphic Box
+D) Real Graphic Base
+
+20. CMYK is mostly used for?
+
+A) Web design
+B) Printing correct
+C) Video editing
+D) Audio mixing
+
+21. Which artist painted “Starry Night”?
+
+A) Van Gogh correct
+B) Rembrandt
+C) Da Vinci
+D) Raphael
+
+22. Negative space refers to?
+
+A) Background area correct
+B) Shadows
+C) Textures
+D) Broken pixels
+
+23. A “mood board” is used for?
+
+A) Painting walls
+B) Gathering design inspiration correct
+C) Fixing fonts
+D) Color correction
+
+24. UX design focuses on?
+
+A) User Experience correct
+B) Unique X-rays
+C) Ultra X-design
+D) Underlying XML
+
+25. UI design focuses on?
+
+A) User Interface correct
+B) Unity Icons
+C) Under Investigation
+D) Unique Images
+
+26. A serif font includes?
+
+A) Thick strokes
+B) Decorative strokes at ends correct
+C) No curves
+D) Only uppercase letters
+
+27. Which is a 3D sculpting software?
+
+A) ZBrush correct
+B) Notepad
+C) Opera
+D) Lightroom
+
+28. Layout design involves?
+
+A) Placing elements on a page correct
+B) Cooking
+C) Debugging
+D) Audio creation
+
+29. Which is a common color model for screens?
+
+A) CMYK
+B) RGB correct
+C) RBG
+D) KCM
+
+30. A gradient is?
+
+A) A border
+B) A smooth color transition correct
+C) A texture
+D) A shadow
+
+31. “Opacity” controls?
+
+A) Size
+B) Color
+C) Transparency correct
+D) Speed
+
+32. A storyboard is used in?
+
+A) Animation correct
+B) Cooking
+C) Programming
+D) Sports
+
+33. The “pen tool” is commonly used for?
+
+A) Baking
+B) Creating vector shapes correct
+C) Erasing lines
+D) Watercolor effects
+
+34. What is a thumbnail sketch?
+
+A) Large drawing
+B) Small quick sketch correct
+C) Digital print
+D) Animation frame
+
+35. Which is NOT a color scheme?
+
+A) Analogous
+B) Monochromatic
+C) Triadic
+D) Rotational correct
+
+36. The term “composition” refers to?
+
+A) Placement of elements correct
+B) File type
+C) Color brightness
+D) Audio quality
+
+37. A vector image can be scaled?
+
+A) Only once
+B) Without losing quality correct
+C) Only smaller
+D) Only larger
+
+38. Which tool removes background in Photoshop?
+
+A) Mixer Brush
+B) Magic Wand/Quick Selection correct
+C) Clone Stamp
+D) Eyedropper
+
+39. Which shape is known for stability in design?
+
+A) Circle
+B) Triangle correct
+C) Star
+D) Heart
+
+40. A “layer” in design software is?
+
+A) Color filter
+B) Separate editable section correct
+C) File format
+D) Font
+
+41. “Saturation” refers to?
+
+A) Color intensity correct
+B) Speed
+C) Texture
+D) Balance
+
+42. Which design principle creates movement?
+
+A) Rhythm correct
+B) Temperature
+C) Silence
+D) Geometry
+
+43. A rough 3D mesh before detailing is called?
+
+A) Base mesh correct
+B) Final render
+C) Texture
+D) Rig
+
+44. What is “rigging”?
+
+A) Adding bones to models correct
+B) Painting
+C) Recording audio
+D) Lighting
+
+45. “Rendering” in design means?
+
+A) Exporting final visual output correct
+B) Drawing with pencil
+C) Importing files
+D) Coding UI
+
+46. A common font pairing technique is?
+
+A) Serif + Sans Serif correct
+B) Serif + Serif
+C) Sans + Sans
+D) Random pairing
+
+47. The grid system is used for?
+
+A) Alignment and layout correct
+B) Coloring
+C) Animation
+D) Shadows
+
+48. Photoshop blend mode for removing white backgrounds?
+
+A) Multiply correct
+B) Overlay
+C) Difference
+D) Lighten
+
+49. What is a mockup?
+
+A) Final product
+B) Realistic preview of design correct
+C) Sketch
+D) Animation
+
+50. A design made of dots is called?
+
+A) Watercolor
+B) Pointillism correct
+C) Graffiti
+D) Calligraphy
